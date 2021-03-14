@@ -1,0 +1,5 @@
+<div>
+    <img src="../assets/checked.png" class="state-img" *ngIf="checkStatus.status == 'crossed'" (click)="onStatusChnaged('crossed')">
+    <img src="../assets/cross.png" class="state-img" *ngIf="checkStatus.status == 'checked'" (click)="onStatusChnaged('checked')">
+    <img src="../assets/circle.png" class="state-img" *ngIf="checkStatus.status == 'unchecked'" (click)="onStatusChnaged('unchecked')">
+  </div>
